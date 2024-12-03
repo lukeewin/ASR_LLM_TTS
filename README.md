@@ -179,7 +179,48 @@ OpenAI Whisper 模型可以到我的博客中查看如何下载 https://blog.luk
 
 Faster Whisper 模型可以到 https://huggingface.co/Systran 下载
 
-# 6. 其它
+# 6. 创建数据库
+执行下面 sql 命令，创建数据库
+
+```mysql
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : Localhost_MySQL5.7
+ Source Server Type    : MySQL
+ Source Server Version : 50743
+ Source Host           : localhost:3306
+ Source Schema         : asr_llm_tts
+
+ Target Server Type    : MySQL
+ Target Server Version : 50743
+ File Encoding         : 65001
+
+ Date: 03/12/2024 12:05:53
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for user
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`  (
+  `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `password` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+
+SET FOREIGN_KEY_CHECKS = 1;
+```
+然后给 user 表设置内容
+```mysql
+insert into user(username, password) value('lukeewin', '123456')
+```
+
+# 7. 其它
 视频演示：
 
 博客：https://blog.lukeewin.top
