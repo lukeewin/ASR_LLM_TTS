@@ -230,6 +230,6 @@ conda env create -f asr_llm_tts_environment.yml
 ```
 
 # 8. 其它
-视频演示：
+视频演示：https://www.bilibili.com/video/BV155z2YtECT
 
 博客：https://blog.lukeewin.top
