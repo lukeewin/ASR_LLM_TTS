@@ -224,7 +224,12 @@ SET FOREIGN_KEY_CHECKS = 1;
 insert into user(username, password) value('lukeewin', '123456')
 ```
 
-# 7. 其它
+# 7. 创建 Python 运行环境
+```shell
+conda env create -f asr_llm_tts_environment.yml
+```
+
+# 8. 其它
 视频演示：
 
 博客：https://blog.lukeewin.top
