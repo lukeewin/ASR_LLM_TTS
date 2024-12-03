@@ -1,9 +1,11 @@
 # 0. 环境说明
-python
+Python
 
-nginx
+Nginx
 
-ffmpeg
+FFmpeg
+
+MySQL
 
 # 1. 使用说明
 本项目是在 python = 3.8 环境中开发
