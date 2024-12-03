@@ -7,6 +7,8 @@ FFmpeg
 
 MySQL
 
+Anaconda
+
 # 1. 使用说明
 本项目是在 python = 3.8 环境中开发
 
